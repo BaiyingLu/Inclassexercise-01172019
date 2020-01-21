@@ -25,23 +25,28 @@ def divide(x,y):
     symbol = "/"
     return c, symbol
 
-x = input("Enter a letter to calculate 47_7=?\n'a' means add, 's' means substract, 'm' means multiply, 'd' means divide\nEnter the action you want to do:\n") #stop and wait the input <br>a means add, s means substract, m means multiply, d means divide<br>Enter the action you want to do
+message = "Enter a letter to calculate 47_7=?\n\
+'a' means add, 's' means substract, 'm' means multiply, 'd' means divide\n\
+Enter the action you want to do:\n"
+x = input(message)
 print("You entered {}".format(x))
+number1 = 47
+number2 = 7
 if x == "a":
-    result,action = add(47,7)
-    print("{} {} {} = {}".format(47,action,7,result))
+    result,action = add(number1,number2)
+    print("{} {} {} = {}".format(number1,action,number2,result))
 
 elif x == "s":
-    result,action = substract(47,7)
-    print("{} {} {} = {}".format(47,action,7,result))
+    result,action = substract(number1,number2)
+    print("{} {} {} = {}".format(number1,action,number2,result))
 
 elif x =="m":
-    result,action = multiply(47,7)
-    print("{} {} {} = {}".format(47,action,7,result))
+    result,action = multiply(number1,number2)
+    print("{} {} {} = {}".format(number1,action,number2,result))
 
 elif x =="d":
-    result,action = divide(47,7)
-    print("{} {} {} = {}".format(47,action,7,result))
+    result,action = divide(number1,number2)
+    print("{} {} {} = {}".format(number1,action,number2,result))
 
 else:
     print("The {} command is not recognized.".format(x))
