@@ -1,4 +1,6 @@
-# This is an advanced calculatory
+# Caculator 1 to calculate 47 and 7
+#Author: Baiying Lu, NetID: bl223
+
 #This function is to do addition
 def add(x,y):
     c = x+y
@@ -28,7 +30,10 @@ def divide(x,y):
     return c, symbol
 
 #Enter the calculation method
-x = input("Enter a letter to decide calucation method\n'a' means add, 's' means substract, 'm' means multiply, 'd' means divide\nEnter the action you want to do:\n") #stop and wait the input <br>a means add, s means substract, m means multiply, d means divide<br>Enter the action you want to do
+message = "Enter a letter to decide a calucation method\n\
+'a' means add, 's' means substract, 'm' means multiply, 'd' means divide\n\
+Enter the action you want to do:\n"
+x = input(message)
 print("You entered {}".format(x))
 
 #Input the first number and str2num
